@@ -44,7 +44,7 @@ pc.script.createLoadingScreen(function (app) {
     var createCss = function () {
         var css = [
             'body {',
-            '    background-color: #283538;',
+            '    background-color: #E6C0F7;',
             '}',
 
             '#application-splash-wrapper {',
@@ -53,7 +53,7 @@ pc.script.createLoadingScreen(function (app) {
             '    left: 0;',
             '    height: 100%;',
             '    width: 100%;',
-            '    background-color: #283538;',
+            '    background-color: #E6C0F7;',
             '}',
 
             '#application-splash {',
@@ -71,13 +71,13 @@ pc.script.createLoadingScreen(function (app) {
             '    margin: 20px auto 0 auto;',
             '    height: 2px;',
             '    width: 100%;',
-            '    background-color: #1d292c;',
+            '    background-color: #000000;',
             '}',
 
             '#progress-bar {',
             '    width: 0%;',
             '    height: 100%;',
-            '    background-color: #f60;',
+            '    background-color: #1CE3A5;',
             '}',
             '@media (max-width: 480px) {',
             '    #application-splash {',
