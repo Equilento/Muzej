@@ -17,7 +17,6 @@ void getTransformCustom() {
     if (mode == 0.0) {
         // fade in effect
 
-        // anim = smoothstep(0.0, 1.0, min(1.0, scaleFactor * 3.0 / (tA.y + 1.0)));
         anim = smoothstep(0.0, 1.0, time * 2.0 / (abs(tA.y) + 1.0));
 
         float mt = fract(anim * 2.0 + fract(tA.x * 10000.0) + fract(tA.y * 10000.0) + fract(tA.z * 10000.0)) * PI * 2.0;
@@ -33,11 +32,10 @@ void getTransformCustom() {
         covB = mix(normalize(b) * scale, b, smoothstep(0.0, 1.0, (anim - 0.5) * 2.0));
 
         anim = smoothstep(0.25, 0.75, anim);
-        tint = vec4(1.0);
+        tint = vec4(0.0, 0.0, 1.0, 1.0); // Blue color
     } else {
         // fade out effect
 
-        // float fade = clamp(tA.y - (2.0 - time * 6.0), 0.0, 1.0);
         float fade = smoothstep(0.0, 1.0, abs(tA.y) - (2.0 - time * 6.0));
 
         vec3 a = tB.xyz;
@@ -48,8 +46,7 @@ void getTransformCustom() {
         covB = b;
 
         anim = 1.0;
-        // tint = vec4(vec3(1.0 + fade), 1.0 - fade);
-        tint = vec4(vec3(1.0), 1.0 - fade);
+        tint = vec4(vec3(1.0, 0.0, 0.0), 1.0 - fade); // Red color
     }
 }
 
