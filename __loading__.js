@@ -44,7 +44,8 @@ pc.script.createLoadingScreen(function (app) {
     var createCss = function () {
         var css = [
             'body {',
-            '    background-color: #E6C0F7;',
+            '    background: rgb(255,232,167);',
+            '    background: radial-gradient(circle, rgba(255,232,167,1) 54%, rgba(158,140,90,1) 100%);',
             '}',
 
             '#application-splash-wrapper {',
@@ -53,7 +54,8 @@ pc.script.createLoadingScreen(function (app) {
             '    left: 0;',
             '    height: 100%;',
             '    width: 100%;',
-            '    background-color: #E6C0F7;',
+            '    background: rgb(255,232,167);',
+            '    background: radial-gradient(circle, rgba(255,232,167,1) 54%, rgba(158,140,90,1) 100%);',
             '}',
 
             '#application-splash {',
@@ -71,13 +73,13 @@ pc.script.createLoadingScreen(function (app) {
             '    margin: 20px auto 0 auto;',
             '    height: 2px;',
             '    width: 100%;',
-            '    background-color: #000000;',
+            '    background-color: #1d292c;',
             '}',
 
             '#progress-bar {',
             '    width: 0%;',
             '    height: 100%;',
-            '    background-color: #1CE3A5;',
+            '    background-color: #f60;',
             '}',
             '@media (max-width: 480px) {',
             '    #application-splash {',
